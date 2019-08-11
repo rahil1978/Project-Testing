@@ -29,12 +29,14 @@ class App extends Component {
       .includes(searchFeild.toLowerCase()) 
       );
     return (
-      <div className='App'>
-      
-      
+      <div className='App'>      
+     <h1> Monster Rolodex </h1> 
       <Search placeholder='Search here...'
       onChangeHandler = {e => this.setState({searchFeild: e.target.value},() => {console.log(this.state)} )} 
       />
+      <br/>
+      <br/>
+      <br/>
       <CardList monsters = {filteredMonsters}>
         <div>
         
